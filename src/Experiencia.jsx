@@ -1,21 +1,20 @@
+import { ExperienciaData } from "./Data"
 import "./Experiencia.css"
 export default function Experiencia() {
+  const {Experiencia1, Experiencia2, Experiencia3} = ExperienciaData
     return(
         <section className="experiencia-container">
       <div className="experiencia-card">
         <h2 className="experiencia-titulo">Experiencia Laboral</h2>
         <ul className="experiencia-lista">
           <li>
-            <strong>Carnicería local</strong> — Atención al cliente, empaque de productos,
-            limpieza y organización del área de trabajo.
+            {Experiencia1}
           </li>
           <li>
-            <strong>Trabajo en fincas</strong> — Apoyo en labores agrícolas, mantenimiento,
-            logística y manejo básico de herramientas.
+            {Experiencia2}
           </li>
           <li>
-            <strong>Ayudante de construcción</strong> — Asistencia en tareas básicas de obra,
-            preparación de materiales y apoyo al personal técnico.
+            {Experiencia3}
           </li>
         </ul>
       </div>

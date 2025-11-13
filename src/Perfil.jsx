@@ -1,5 +1,7 @@
+import { PerfilData } from "./Data"
 import "./Perfil.css"
 export default function Perfil() {
+  const {descripcion, aptitud1, aptitud2, aptitud3, aptitud4, aptitud5, hobbie1, hobbie2, hobbie3, hobbie4} = PerfilData
     return(
        <section className="perfil-container">
       <div className="perfil-card">
@@ -9,11 +11,7 @@ export default function Perfil() {
         {/* Descripción personal */}
         <div className="perfil-descripcion">
           <p>
-            Estudiante en formación del <strong>SENA (Servicio Nacional de Aprendizaje)</strong>,
-            apasionado por la tecnología y el desarrollo de soluciones innovadoras.
-            Poseo habilidades en <strong>programación</strong>, <strong>diseño</strong> y
-            <strong> resolución de problemas</strong>, siempre buscando mejorar mis capacidades
-            para crear soluciones eficientes y funcionales.
+            {descripcion}
           </p>
         </div>
 
@@ -21,11 +19,11 @@ export default function Perfil() {
         <div className="perfil-seccion">
           <h3 className="perfil-subtitulo">Aptitudes</h3>
           <ul className="perfil-lista">
-            <li>Conocimiento intermedio en <strong>Python</strong></li>
-            <li>Manejo de <strong>bases de datos</strong></li>
-            <li>Diseño web con <strong>Tailwind CSS</strong> y <strong>Bootstrap</strong></li>
-            <li>Creatividad en la solución de problemas</li>
-            <li>Buen manejo de <strong>oratoria</strong> y comunicación</li>
+            <li>{aptitud1}</li>
+            <li>{aptitud2}</li>
+            <li>{aptitud3}</li>
+            <li>{aptitud4}</li>
+            <li>{aptitud5}</li>
           </ul>
         </div>
 
@@ -33,10 +31,10 @@ export default function Perfil() {
         <div className="perfil-seccion">
           <h3 className="perfil-subtitulo">Hobbies</h3>
           <ul className="perfil-lista perfil-lista-hobbies">
-            <li>Streamear</li>
-            <li>Jugar PlayStation</li>
-            <li>Cocinar</li>
-            <li>Jugar baloncesto</li>
+            <li>{hobbie1}</li>
+            <li>{hobbie2}</li>
+            <li>{hobbie3}</li>
+            <li>{hobbie4}</li>
           </ul>
         </div>
       </div>
