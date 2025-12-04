@@ -33,3 +33,11 @@ export const EstudiosData = {
     EstudioTecnologo: "Servicio Nacional De Aprendizaje (SENA)",
     FechaTecnologo: "29/04/2025 - Actualidad",
 }
+
+export const habilidadesData = [
+  "Trabajo en equipo",
+  "Comunicación efectiva",
+  "Aprendizaje rápido",
+  "Manejo básico de Git y GitHub",
+  "Menejo básico de pyhton,html con tailwind y css"
+];
